@@ -1,0 +1,14 @@
+{
+  "extends": "@shveitsar/configs/tsconfig.lib.json",
+  "compilerOptions": {
+    "outDir": "dist"
+  },
+  "include": ["src", "env"],
+
+  "ts-node": {
+    "moduleTypes": {
+      "**/*": "esm"
+    },
+    "transpileOnly": true
+  }
+}
